@@ -1,4 +1,4 @@
-package org.javalad.meeting;
+package org.javalad.meeting.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
