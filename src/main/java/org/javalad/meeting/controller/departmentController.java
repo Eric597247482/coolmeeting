@@ -16,8 +16,9 @@ public class departmentController {
     DepartmentService departmentService;
 
     @GetMapping("/dep")
-    public void getDepById(Integer id) {
+    public String getDepById(Integer id) {
         Department dep = departmentService.getDepById(id);
-        System.out.println("dep =" + dep);
+        System.out.println("dep =" + dep.toString());
+        return dep.getDepartmentname();
     }
 }
